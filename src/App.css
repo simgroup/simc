@@ -3,7 +3,9 @@
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
@@ -18,12 +20,26 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@import url('./assets/css/animate.min.css');
+
 @import url('./assets/css/bootstrap.min.css');
-/* @import url('./assets/css/fontawesome-all.min.css'); */
-@import url('./assets/css/mobile.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css');  
+/* @import url('./assets/css/mobile.css'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css');
+@import url('./assets/css/slick.css');
 @import url('./assets/css/style.css');
-@import url('./assets/css/style_s.css');
-/* @import url('./assets/css/text-editor.css'); */
+

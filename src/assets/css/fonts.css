@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../fonts/Bahnschrift.eot');
+  src: url('../fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Bahnschrift.woff2') format('woff2'),
+      url('../fonts/Bahnschrift.woff') format('woff'),
+      url('../fonts/Bahnschrift.ttf') format('truetype'),
+      url('../fonts/Bahnschrift.svg#Bahnschrift') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans MT Pro Light';
+  src: url('../fonts/GillSansMTPro-Light.eot');
+  src: url('../fonts/GillSansMTPro-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/GillSansMTPro-Light.woff2') format('woff2'),
+      url('../fonts/GillSansMTPro-Light.woff') format('woff'),
+      url('../fonts/GillSansMTPro-Light.ttf') format('truetype'),
+      url('../fonts/GillSansMTPro-Light.otf') format('truetype'),
+      url('../fonts/GillSansMTPro-Light.svg#GillSansMTPro-Light') format('svg');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans MT Pro Bold';
+  src: url('../fonts/GillSansMTPro-Bold.eot');
+  src: url('../fonts/GillSansMTPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/GillSansMTPro-Bold.woff2') format('woff2'),
+      url('../fonts/GillSansMTPro-Bold.woff') format('woff'),
+      url('../fonts/GillSansMTPro-Bold.ttf') format('truetype'),
+      url('../fonts/GillSansMTPro-Bold.otf') format('truetype'),
+      url('../fonts/GillSansMTPro-Bold.svg#GillSansMTPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+    font-family:'Tw Cen MT';
+    src: url('../fonts/TwCenMT-Regular.eot');
+    src: url('../fonts/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TwCenMT-Regular.woff2') format('woff2'),
+        url('../fonts/TwCenMT-Regular.woff') format('woff'),
+        url('../fonts/TwCenMT-Regular.ttf') format('truetype'),
+        url('../fonts/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('../fonts/TradeGothicLT-Bold.eot');
+    src: url('../fonts/TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TradeGothicLT-Bold.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT-Bold.woff') format('woff'),
+        url('../fonts/TradeGothicLT-Bold.ttf') format('truetype'),
+        url('../fonts/TradeGothicLT-Bold.svg#TradeGothicLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kabel Bd';
+    src: url('KabelBdNormal.woff2') format('woff2'),
+        url('KabelBdNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kabel Bk BT';
+    src: url('../fonts/KabelITCbyBT-Book.woff2') format('woff2'),
+        url('../fonts/KabelITCbyBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kabel Bd';
+    src: url('../fonts/KabelBdNormal.woff2') format('woff2'),
+        url('../fonts/KabelBdNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kabel Bk BT';
+    src: url('../fonts/KabelITCbyBT-Book.woff2') format('woff2'),
+        url('../fonts/KabelITCbyBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

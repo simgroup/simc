@@ -1,137 +1,110 @@
+$(document).ready(function () {
 
-
-$(document).ready(function() {
-
-/*edit-field*/
-$("#add-equip").click(function(){
-    $('.table-edit tbody tr:first-child').addClass('editmodeequip')
-      $('.savefield').click(function(){
-         $(this).closest('tr').removeClass('editmodeequip')
-      });
-});
- $('.edit-field').click(function(){
-        $(this).closest('tr').addClass('editmode')
-      var $showField = $(this).closest('tr').children('td.editfield');
-      $showField.children('input').show();
-      $showField.children('select').show();
-      $showField.children('p').hide();
-      });
-
-       $('.savefield').click(function(){
-        $(this).closest('tr').removeClass('editmode')
-      var $showField = $(this).closest('tr').children('td.editfield');
-      $showField.children('input').hide();
-      $showField.children('select').hide();
-      $showField.children('p').show();
-      });
-
-    
-
-    /*========top-search===========*/
-    $(" .btn-mobsearch").click(function() {
-
-        $(".header-right-part").toggleClass("search-show");
-
-        $(this).find("i").toggleClass("fa-search fa-times");
-
+    $('.navbar-toggler').click(function (event) {
+        event.stopPropagation();
+        $('body').addClass('openMenu');
+    });
+    $('.toggle-btn').click(function (event) {
+        event.stopPropagation();
+        $('body').addClass('openProfileMenu');
+    });
+    $('.rightbarMenu, .left-sidebar').click(function (event) {
+        event.stopPropagation();
+    });
+    $('.navbar-close').click(function (event) {
+        event.stopPropagation();
+        $('body').removeClass('openMenu');
+    });
+    $('body').click(function () {
+        $('body').removeClass('openMenu');
+    });
+    $('body').click(function () {
+        $('body').removeClass('openProfileMenu');
     });
 
-
-    
-
-    $(".btn-toggle,.close_panel").click(function() {
-        $("body").toggleClass("toggle-wrapper");
+    $('.houzty-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: false,
+        autoplay: true,
     });
 
-
-    $(document).on("click", ".top-user-img", function() {
-        $(".head-drop-down").toggleClass("show");
-    });
-
-    $('.datepicker').datepicker();
-    /* =====Side Panel=== */
-    if ($(window).width() < 768) {
-        $('body').removeClass('toggle-wrapper');
-    } else if ($(window).width() > 767 && $(window).width() < 1025) {
-        $('body').addClass('toggle-wrapper');
-    }
-    $(window).resize(function() {
-        if ($(window).width() < 768) {
-            $('body').removeClass('toggle-wrapper');
-        } else if ($(window).width() > 767 && $(window).width() < 1025) {
-            $('body').addClass('toggle-wrapper');
-        }
-    });
-
-    /* ===========Side Panel End======== */
-    /* =====Increase Descrese========== */
-    $(".inc-btn").click(function() {
-        var get_val = parseInt($(".show_record input").val());
-        get_val = get_val + 1;
-        $(".show_record input").val(get_val)
-    });
-
-    $(".dec-btn").click(function() {
-        var dec_val = parseInt($(".show_record input").val());
-        if (dec_val <= 0) {
-            return false;
-        } else {
-            dec_val = dec_val - 1;
-            $(".show_record input").val(dec_val)
-        }
-    });
-
-    /* ============Nice Scroll============= */
-    var nice = $("html").niceScroll();
-    $(".scroll-section, .sidebar").niceScroll({
-        cursorborder: "",
-        cursorcolor: "#EFC0ED",
-        boxzoom: false
-
-    });
-
-
-    /* =================Upload file========== */
-
-    $('.browse_btn  input[type="file"]').change(function() {
-        if ($(this).val()) {
-            error = false;
-
-            /* var filename = $(this).val(); */
-            var filename = $(this).val().split('\\').pop();
-            $('.filename').html(filename);
-
-            if (error) {
-                parent.addClass('error').prepend.after('<div class="alert alert-error">' + error + '</div>');
+    $('.testimonial-slider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
-        }
-    });
-    /* =================Upload File End======== */
-
-    /* ========For Image Change========== */
-    $('.select_picture input[type=file]').change(function() {
-        readURL(this);
+        ]
     });
 
-
-    function readURL(input) {
-
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function(e) {
-                $('.bank_image_box img').attr('src', e.target.result).fadeIn('slow');
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-
-    /* =========Image Changes====== */
+    // $('.dropdown-menu').click(function (event) {
+    //   event.stopPropagation();
+    // });
 
 
+    // $('.testimonial-slider').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     arrows: false,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    // });
 
+    // $('.sclSlider').slick({
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    // });
+
+    // $(".comment").shorten({
+    //     "showChars": 500,
+    //     "moreText": "View More",
+    //     "lessText": "Less",
+    // });
+
+    // $('#datepicker').datepicker({
+    //     uiLibrary: 'bootstrap4'
+    // });
 
 
 
 });
-/* Ready End */
+
+
+
